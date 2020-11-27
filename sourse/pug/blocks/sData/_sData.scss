@@ -16,11 +16,15 @@
 		color: $dark;
 		font-weight: bold;
 		letter-spacing: .117em;
+		text-transform: uppercase;
 	}
 	
 	ul {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		@include media-breakpoint-up(lg) {
+			justify-content: space-between;
+		}
 		flex-wrap: wrap;
 		margin-bottom: 0;
 		margin-left: -10px;
@@ -31,6 +35,9 @@
 			padding-bottom: rem(10);
 			list-style: none;
 			font-size: 19px;
+			@include media-breakpoint-only(lg) {
+				font-size: $em-base;
+			}
 		}
 	}
 
