@@ -1,0 +1,75 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sData/_sData.pug
+include ../blocks/sOffer/_sOffer.pug
+include ../blocks/sStat/_sStat.pug
+include ../blocks/sStudies/_sStudies.pug
+include ../blocks/sLinks/_sLinks.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'UNIM'
+	title= title
+block pagecontent
+
+	+header()
+		+top-nav({
+			btn: 'log in'
+		})
+		+headerBlock({
+			title: 'We are looking for',
+			text: "A fully digital pathomorphological laboratory with three-years experience in digital will provide its big data for scientific publications",
+			listTitle: 'We offer',
+			list1: 'our data for your research',
+			list2: 'research partnership',
+			reg: 'Register',
+			learn: 'Learn more'
+		})
+	+sData({
+		link1: 'pathomorphology',
+		link2: 'telepathology',
+		link3: 'medical integration',
+		link4: 'IT',
+		link5: 'medicine',
+		link6: 'equipment manufacturers',
+		title: 'THE DATA WE HAVE ACCUMULATED AND SUGGEST TO USE FOR ANALYSIS'
+	})
+	+sOffer({
+		title: 'We offer:',
+		item1: 'Images: 500 000',
+		item2: 'Among them DICOM: 870',
+		item3: 'Among them WSI: 150 000',
+		item4: 'Total number of cases: 100 000'
+	})
+	+sStat()
+	+sStudies({
+		title: 'STUDIES THAT ARE ALREADY BEING CONDUCTED ON OUR DATA',
+		txt1: 'Research on three scanners in various operation modes (speed/reliability)',
+		txt2: `Expert comparison of scan quality on three&nbsp;scanners`
+	})
+	+sContent()
+	+sForm({
+		title: 'access request form',
+		name: 'Name',
+		phone: 'Phone number',
+		mail: 'E-mail',
+		facebook: 'Facebook',
+		linkedin: 'LinkedIn',
+		position: 'Job position',
+		goal: 'Work goals',
+		btn: 'Register'
+	})
+	+sLinks({
+		title: 'links'
+	})
+	+sContact({
+		title: 'contact info'
+	})
+	+footer()
+
+
+	

@@ -1,0 +1,13 @@
+mixin sContact(data)
+	// start sContact
+	+b.SECTION.sContact.section#sContact&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2= data.title
+				
+			.row.justify-content-center
+				.col-auto
+					+e.name Mikhail Genis
+				.col-auto
+					+e.mail(href='mailto:genis@unim.su') genis@unim.su
+	// end sContact

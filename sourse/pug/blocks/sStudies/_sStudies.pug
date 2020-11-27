@@ -1,0 +1,17 @@
+mixin sStudies(data)
+	// start sStudies
+	+b.SECTION.sStudies.section#sStudies&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2= data.title
+				
+			.row
+				.col-md-6
+					+e.item
+						+pic('studies-1.png')
+						+e.text= data.txt1
+				.col-md-6
+					+e.item
+						+pic('studies-2.png')
+						+e.text!= data.txt2
+	// end sStudies

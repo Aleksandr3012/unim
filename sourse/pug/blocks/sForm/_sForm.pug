@@ -1,0 +1,19 @@
+mixin sForm(data)
+	// start sForm
+	+b.SECTION.sForm.section#sForm&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2= data.title
+				
+			+form-wrap
+				+input('','',data.name)
+				+input('','tel',data.phone)
+				+input('','email',data.mail)
+				+input('','',data.facebook)
+				+input('','',data.linkedin)
+				+input('','',data.position)
+				+e.textareaWrap
+					+input('','textarea',data.goal)
+				.text-center
+					+e.btn(type="submit")= data.btn
+	// end sForm

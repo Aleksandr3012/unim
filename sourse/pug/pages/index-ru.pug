@@ -1,0 +1,75 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sData/_sData.pug
+include ../blocks/sOffer/_sOffer.pug
+include ../blocks/sStat/_sStat.pug
+include ../blocks/sStudies/_sStudies.pug
+include ../blocks/sLinks/_sLinks.pug
+
+block variables
+	- let  mainPage= 'ru'
+block title
+	- let  title= 'UNIM'
+	title= title
+block pagecontent
+
+	+header()
+		+top-nav-ru({
+			btn: 'войти'
+		})
+		+headerBlock({
+			title: 'ИЩЕМ специалистов',
+			text: "Полностью цифровая патоморфологическая лаборатория с трехлетним опытом работы в цифре предоставит свои большие данные для научных публикаций.",
+			listTitle: 'Мы предлагаем:',
+			list1: 'Наши данные для вашего исследования',
+			list2: 'Партнерство для совместного проведения исследования',
+			reg: 'Зарегистрироваться',
+			learn: 'Узнать больше'
+		})
+	+sData({
+		link1: 'патоморфология',
+		link2: 'телепатология',
+		link3: 'медицинская интеграция',
+		link4: 'IT',
+		link5: 'медицина',
+		link6: 'производители оборудования',
+		title: 'накопленные для анализа данные'
+	})
+	+sOffer({
+		title: 'Мы предлагаем:',
+		item1: 'Изображений: 500 000',
+		item2: 'Из них DICOM: 870',
+		item3: 'Из них WSI: 150 000',
+		item4: 'Всего случаев: 100 000'
+	})
+	+sStat-ru()
+	+sStudies({
+		title: 'исследования, уже проводящиеся на наших данных',
+		txt1: 'Исследование на трех сканерах в разных режимах по производительности (скорости/надежности).',
+		txt2: `Экспертное сравнение качества сканов на трех сканерах`
+	})
+	+sContent-ru()
+	+sForm({
+		title: 'заявка на участие в конкурсе на предоставление доступа',
+		name: 'Имя Фамилия',
+		phone: 'Телефон',
+		mail: 'E-mail',
+		facebook: 'Facebook',
+		linkedin: 'LinkedIn',
+		position: 'Должность',
+		goal: 'Цели работы',
+		btn: 'Зарегистрироваться'
+	})
+	+sLinks({
+		title: 'ссылки'
+	})
+	+sContact({
+		title: 'контакты'
+	})
+	+footer()
+
+
+	

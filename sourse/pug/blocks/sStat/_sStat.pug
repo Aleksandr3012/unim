@@ -1,0 +1,45 @@
+mixin sStat(data)
+	// start sStat
+	+b.SECTION.sStat.section#sStat&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h3 In each case, statistics are kept:
+				
+			ul
+				li included clinical diagnosis
+				li time of incoming material registration
+				li types of incoming material
+				li time of passing each stage and creation of materials in the laboratory: histo slides, histoblocks, staining, creation of digital images, data availability for the pathologists
+				li pathologist’s appointment time in case
+				li time of adding a second pathologists into the case 
+				li statistics of communication between pathologists, num-ber of messages, time of registration of each message
+				li statistics of additional pathologists connection
+				li statistics of IHC panel assignment, slide creation, staining, scanning, uploading the case as WSI set
+				li time of writing the report.
+				li time of validation of the report by another pathologist
+				li time of sending the report
+				li links to the same patient’s cases
+				li Anamnesis are contained in the system for each patient in a general unstructured format in Russian. Part of the data is structured. <br>The reports are structured, in Russian.
+	// end sStat
+
+mixin sStat-ru(data)
+	// start sStat
+	+b.SECTION.sStat.section#sStat&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h3 В каждом случае ведется статистика:
+				
+			ul
+				li входящий клинический диагноз
+				li время регистрации входящего материала
+				li виды/типы входящего материала
+				li время прохождения каждого этапа и создания материалов в лаборатории: гистостекол, гистоблоков, окрашиваний, создания цифровых изображений, доступности данных для врача
+				li время назначения врача в случай
+				li время добавления второго врача в случай
+				li статистика коммуникации между врачами, % число сообщений, время регистрации каждого сообщения
+				li статистика назначения ИГХ панелей, создания стекол, окрашивания, сканирования, попадания в случай в виде WSI
+				li время написания заключения
+				li время валидации заключения другим врачом
+				li время отправки заключения
+				li ссылки на случаи того же пациента
+				li Анамнезы содержатся в системе для каждого пациента в общем случае в неструктурированном формате на русском языке. Часть данных структурирована. <br>Заключения структурированы, на русском языке.

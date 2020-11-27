@@ -1,0 +1,17 @@
+mixin sOffer(data)
+	// start sOffer
+	+b.SECTION.sOffer.section#sOffer&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h3= data.title
+				
+			.row
+				.col-md-6
+					+e.item= data.item1
+				.col-md-6
+					+e.item= data.item2
+				.col-md-6
+					+e.item= data.item3
+				.col-md-6
+					+e.item= data.item4
+	// end sOffer

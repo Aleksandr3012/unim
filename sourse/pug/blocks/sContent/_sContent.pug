@@ -1,0 +1,122 @@
+mixin sContent()
+	// start sContent
+	+b.SECTION.sContent.section#sContent&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 INFO ABOUT UNIM AND DATA
+				
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					mixin slide(i)
+						.swiper-slide
+							if i
+								a(href=`img/@2x/photo-2.jpg` data-fancybox=`photo`)
+									picture
+										source.swiper-lazy(srcset="#" data-srcset=`img/@2x/webp/photo-2.webp` type="image/webp")
+										img.swiper-lazy(src="#" data-src=`img/@2x/photo-2.jpg`, alt="")
+							else
+								a(href=`img/@2x/photo.jpg` data-fancybox=`photo`)
+									picture
+										source.swiper-lazy(srcset="#" data-srcset=`img/@2x/webp/photo.webp` type="image/webp")
+										img.swiper-lazy(src="#" data-src=`img/@2x/photo.jpg`, alt="")
+					+slide
+					+slide('i')
+					+slide
+					+slide('i')
+				.swiper-pagination
+			+e.block
+				p UNIM Company was founded in 2014. The same year it developed its own technology for working with large images and conducting a consultation. In 2018, to improve development of the technology, the company opened its own pathomorphological laboratory  in the innovation center Skolkovo (Moscow), working entirely in digital format. n 2020, the company opened one more laboratory, a full copy of the current lab. In 2020, a new contract was signed to deploy the Platform in the Khabarovsk region of Russia (digitalization of all pathology in the region).
+			.text-center
+				h3 As of autumn 2020, the company:
+			ul
+				li Provides diagnosis for 150-250 patients daily (5000 per month on average), the percentage of cancer cases - 10%
+				li In each complicated/oncological/operational case/second opinion, at least 2 pathologists are involved in the diagnosis (average number of doctors per case is 2.12)
+				li The laboratory works 7/365 and provides the following SLAs: for 80% of cases the diagnosis time is less than 72 hours for biopsy, 96 hours for the sigery one, in case of IHC the time is extended by no more than 48 hours.
+				li There are 38 pathologists in the company for daily routine  and not more than 2 of them are directly present in the laboratory physically.
+				li There are more than 1500 active accounts from 35 countries are connected to DP system
+				li The area of the laboratory - 200 square meters
+			.row
+				.col-md-6.order-md-last
+					+e.imgWrap
+						a(href=`img/@2x/photo-2.jpg` data-fancybox=`office`)
+							+pic('photo-2','','')
+				.col-md-6
+					h3 The laboratory uses the following equipment:
+					ul
+						li Leica Aperio AT2 Histology Scanner - 2 pcs.
+						li histological stainer with the module for the cover film - 1 pcs.
+						li rotational microtoms - 3 pcs.
+						li cassette printer - 1 pcs.
+						li cutting station - 2 pcs
+						li histology processor - 2 pcs.
+						li Leica BOND IHC Steiner - 2 pcs.
+						li average utilization rate of equipment - 80%
+					h3 The laboratory uses a self-developed platform UNIM DIgital Pathology - DP, this platform includes seamless integration of three interrelated functions:
+					ul
+						li Lab Information System: material tracking, integration with patient’s information systems (MIS), macro description standards.
+						li Digital Pathology: Consilium, assistants, communications environment, microdescription standards.
+						li Statistics and control module: performance of equipment, staff, doctors, timing control, document distribution.
+
+	// end sContent63.
+
+mixin sContent-ru()
+	// start sContent
+	+b.SECTION.sContent.section#sContent&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 о юним
+				
+			+e.slider--js.swiper-container
+				.swiper-wrapper
+					mixin slide(i)
+						.swiper-slide
+							if i
+								a(href=`img/@2x/photo-2.jpg` data-fancybox=`photo`)
+									picture
+										source.swiper-lazy(srcset="#" data-srcset=`img/@2x/webp/photo-2.webp` type="image/webp")
+										img.swiper-lazy(src="#" data-src=`img/@2x/photo-2.jpg`, alt="")
+							else
+								a(href=`img/@2x/photo.jpg` data-fancybox=`photo`)
+									picture
+										source.swiper-lazy(srcset="#" data-srcset=`img/@2x/webp/photo.webp` type="image/webp")
+										img.swiper-lazy(src="#" data-src=`img/@2x/photo.jpg`, alt="")
+					+slide
+					+slide('i')
+					+slide
+					+slide('i')
+				.swiper-pagination
+			+e.block
+				p Компания ЮНИМ была основана в&nbsp;2014&nbsp;году. В&nbsp;том&nbsp;же году разработала собственную технологию работы с&nbsp;большими изображениями и&nbsp;проведения консилиума. В&nbsp;2018 году для совершенствования развития технологии компания на&nbsp;территории инновационного центра Сколково (Москва) открыла собственную патоморфологическую лабораторию, работающую полностью в&nbsp;цифровом формате. В&nbsp;2020 году компания открыла еще одну лабораторию, полную копию текущей, в&nbsp;2020 году подписан контракт на&nbsp;развертывание Платформы в&nbsp;Хабаровском регионе России (цифровизация всей патоморфологии в&nbsp;регионе).
+			.text-center
+				h3 По состоянию на осень 2020 компания:
+			ul
+				li обеспечивает диагностику для 150-250 пациентов ежедневно (5000 в месяц в среднем), процент онкологических случаев - 10%
+				li в каждом сложном/онкологическом/операционном случае/пересмотре в диагностике участвует минимум 2 врача (среднее число врачей на случай 2,12)
+				li Tлаборатория работает 7/365 и обеспечивает выполнение следующих SLA: для 80% случаев сроки диагностики составляют менее 72 часов для биопсийного материала, 96 часов для операционного, в случае назначения ИГХ исследований срок увеличивается не более чем на 48 часов.
+				li в штате лаборатории 38 врачей, из них непосредственно присутствуют в лаборатории не более 2х
+				li к системе DP подключено более 1500 активных аккаунтов из 35 стран
+				li Площадь лаборатории - 200 квадратных метров
+
+			.row
+				.col-md-6.order-md-last
+					+e.imgWrap
+						a(href=`img/@2x/photo-2.jpg` data-fancybox=`office`)
+							+pic('photo-2','','')
+				.col-md-6
+					h3 Используемое  оборудование и технологии:
+					ul
+						li сканер гистологических препаратов  Leica Aperio AT2 - 2 шт
+						li процессор гистологический с модулем для покровной пленки - 1 шт
+						li ротационные микротомы - 3 шт
+						li принтер кассет - 1 шт
+						li стол для вырезки - 2 шт
+						li гистологическая проводка - 2 шт
+						li ИГХ стейнер Leica BOND - 2 шт
+						li средний уровень утилизации оборудования - более 80%
+					h3 Лаборатория использует платформу собственной разработки DIgital Pathology&nbsp;&mdash; DP, данная платформа включает в&nbsp;себя бесшовную интеграцию трех взаимосвязанных функциональностей:
+					ul
+						li Лабораторно Информационная Система: трекинг материала, интеграция с информационными системами клиентов, стандарты макроописаний.
+						li Цифровая патология: консилиум, ассистанс, коммуникационная среда, стандарты микроописаний.
+						li Модуль статистики и контроля: производительность оборудования, персонала, врачей, контроль сроков, рассылка документов.
+
+	// end sContent63.

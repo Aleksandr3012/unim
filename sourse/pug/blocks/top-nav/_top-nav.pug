@@ -1,0 +1,70 @@
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.toggle-menu-mobile--js.d-lg-none
+		span
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			.text-right
+	//  мобильное меню
+mixin mob-mnu-ru()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.toggle-menu-mobile--js.d-lg-none
+		span
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu-ru()
+			.text-right
+mixin top-nav(data)
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			.row.align-items-center.justify-content-between
+				.col.col-sm-auto
+					+e.logo(href="#")
+						img.res-i(src="img/@2x/logo.png", alt="")
+				.col.col-sm-auto.d-none.d-lg-block
+					+mnu()
+				.col.col-sm-auto
+					+e.btn(href="#")= data.btn
+				.col-auto.d-lg-none
+					+mob-mnu()
+
+mixin top-nav-ru(data)
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			.row.align-items-center.justify-content-between
+				.col.col-sm-auto
+					+e.logo(href="#")
+						img.res-i(src="img/@2x/logo.png", alt="")
+				.col.col-sm-auto.d-none.d-lg-block
+					+mnu-ru()
+				.col.col-sm-auto
+					+e.btn(href="#")= data.btn
+				.col-auto.d-lg-none
+					+mob-mnu-ru()
+					
+	// end top-nav

@@ -1,0 +1,53 @@
+// start .sContact
+.sContact {
+	padding-top: calc(var(--sPT) * 1.75);
+	padding-bottom: calc(var(--sPB) * 2.25);
+
+	.section-title {
+		padding-bottom: calc(var(--sTPB) * 1.8);
+	}
+
+	h2 {
+		@extend .mono;
+		font-weight: bold;
+		color: $dark;
+		letter-spacing: .12em;
+		text-transform: uppercase;
+	}
+
+	&__mail {
+		color: $body-color;
+		text-decoration: underline;
+	}
+
+
+	&__name {
+		position: relative;
+		font-weight: 500;
+		color: $dark;
+
+		&::before {
+			content: '';
+			position: absolute;
+			@include a-cent(y);
+			right: -23px;
+			width: 1px;
+			height: 22px;
+			background-color: $body-color;
+		}
+	}
+
+	.row {
+		@include roww(46px)
+	}
+
+
+
+
+
+	@include media-breakpoint-up(xs) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xs) {} 
+
+} // end.sContact

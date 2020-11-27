@@ -1,0 +1,16 @@
+mixin sData(data)
+	// start sData
+	+b.SECTION.sData.section#sData&attributes(attributes)
+		.container
+			+e.links
+				ul
+					li: a(href="#")= data.link1
+					li: a(href="#")= data.link2
+					li: a(href="#")= data.link3
+					li: a(href="#")= data.link4
+					li: a(href="#")= data.link5
+					li: a(href="#")= data.link6
+			+b.section-title.text-center
+				h2= data.title
+				
+	// end sData
