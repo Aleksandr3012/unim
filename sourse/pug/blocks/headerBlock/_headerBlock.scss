@@ -1,8 +1,12 @@
 // start .headerBlock
 .headerBlock {
-	min-height: calc(100vh - 98px);
+	min-height: 100vh;
 	// min-height: calc(var(--vh, 1vh) * 100);
-	padding-top: rem(195);
+	padding-top: rem(160);
+	@include media-breakpoint-up(lg) {
+		padding-top: rem(195);
+	}
+	padding-bottom: rem(40);
 
 
 	&__inner {
