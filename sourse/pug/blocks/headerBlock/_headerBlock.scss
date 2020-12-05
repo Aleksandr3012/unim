@@ -29,9 +29,10 @@
 	}
 
 	&__btnWrap {
-		max-width: 556px;
-		margin-left: auto;
-		margin-right: auto;
+		@include media-breakpoint-up(md) {
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	&__reg {
