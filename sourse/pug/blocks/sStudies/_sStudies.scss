@@ -20,7 +20,7 @@
 		background-color: #fff;
 		padding: rem(20);
 		min-height: 150px;
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			min-height: 203px;
 			padding: rem(67) rem(65);
 		}

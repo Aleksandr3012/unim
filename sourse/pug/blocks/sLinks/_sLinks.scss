@@ -24,6 +24,9 @@
 		line-height: 1.8;
 		display: block;
 		margin-bottom: rem(10);
+		@include media-breakpoint-down(lg) {
+			text-align: center;
+		}
 	}
 
 	@include media-breakpoint-up(sm) {}
