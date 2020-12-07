@@ -8,19 +8,37 @@
 	}
 	padding-bottom: rem(40);
 
-		display: grid;
-		place-items: center;
+	display: grid;
+	place-items: center;
+
+	@media (min-width: 1200px) and (max-width: 1400px) {
+		padding-top: rem(120);
+	}
 
 	&__inner {
 		max-width: 776px;
-		background-color: rgba($color: #000000, $alpha: 0.75);
+		background-color: rgba($color: #000000, $alpha: 0.65);
 		padding: rem(20);
 		margin: 0 auto rem(30);
 		@include media-breakpoint-up(md) {
 			margin: 0 auto rem(57);
 			padding: rem(66) rem(118) rem(50);
 		}
+		@media (min-width: 1200px) and (max-width: 1400px) {
+			padding: rem(33) rem(100) rem(25);
+			margin-bottom: rem(25);
+		}
 		color: #fff;
+	}
+
+	.section-title {
+		@include media-breakpoint-up(md) {
+			margin-left: rem(-15px);
+			padding-right: rem(-15px);
+		}
+		@media (min-width: 1200px) and (max-width: 1400px) {
+			padding-bottom: calc(var(--sTPB) / 1.5);
+		}
 	}
 
 	h1 {

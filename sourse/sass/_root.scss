@@ -8,6 +8,12 @@
 		--sTPB: #{rem(40)};
 	}
 
+	@media (min-width: 1200px) and (max-width: 1400px) {
+		--sPT: #{rem(45 / 2)};
+		--sPB: #{rem(34 / 2)};
+		--sTPB: #{rem(40 / 2)};
+	}
+
 	--sPT: #{rem(45 / 2)};
 	--sPB: #{rem(34 / 2)};
 	--sTPB: #{rem(40 / 2)};
