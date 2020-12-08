@@ -10,11 +10,9 @@
 	ul {
 		@include media-breakpoint-up(md) {
 			columns: 2;
+			column-gap: 20px;
 		}
-		@include media-breakpoint-up(md) {
-			column-gap: 40px;
-		}
-		max-width: rem(780);
+		max-width: rem(820);
 		margin-left: auto;
 		margin-right: auto;
 		li {
